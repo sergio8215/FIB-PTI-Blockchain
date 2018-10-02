@@ -310,7 +310,7 @@ def validate_hash():
         }
     return jsonify(response), 200
 
-@app.route('/nodes/manipulate', methods=['POST'])
+@app.route('/nodes/manipulate', methods=['GET'])
 def trick_chain():    
 
     del blockchain.chain[-1]

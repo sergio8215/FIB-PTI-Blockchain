@@ -1,6 +1,7 @@
 #!/bin/sh
 
 #Run the two nodes
+pkill python3.6
 pkill python
 python3.6 blockchain.py -p 5000 &
 python3.6 blockchain.py -p 5001 &
